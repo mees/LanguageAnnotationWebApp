@@ -2,7 +2,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is a simple web annotation tool for annotating undirected, human teleoperated play data with crowdsourced language annotations. The tool was developed mostly for the project (Grounding Language with Visual Affordances over Unstructured Data)[http://hulc2.cs.uni-freiburg.de/]
+This is a simple web annotation tool for annotating undirected, human teleoperated play data with crowdsourced language annotations. The tool was developed mostly for the project [Grounding Language with Visual Affordances over Unstructured Data](http://hulc2.cs.uni-freiburg.de/)
 
 ![](media/LangAnnotation.jpg)
 
