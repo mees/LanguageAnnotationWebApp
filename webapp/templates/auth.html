@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Authentication{% endblock %}
+{% block content %}
+<br />
+<h1 align="center">Enter Password</h1>
+    <br />
+    <form method="POST">
+        <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+        />
+        </div>
+        <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+        />
+        </div>
+    </form>
+{% endblock %}
