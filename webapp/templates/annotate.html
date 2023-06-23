@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}
+Annotator
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/general.css') }}">
+<h1 align="center">Language Annotation Tool</h1>
+<br />
+<br />
+<form method="POST">
+  <div align="center">
+    <h5 align="center">Which instruction would you give to the robot to complete the following task? (Seq {{seq}})</h5>
+    <div class="flex_row">
+      <video controls="" autoplay="" name="media" style="margin: 1em 0" id="video">
+        <source id="video_src" src="{{url_for('static',filename='static_cam/' +content )}}" type="video/webm">
+      </video>
+      <video controls="" autoplay="" name="media" style="margin: 1em 0" id="video">
+        <source id="video_src" src="{{url_for('static',filename='gripper_cam/' +content )}}" type="video/webm">
+      </video>
+    </div>
+    <div class="flex_column">
+      <div class="flex_row">
+        <div class="flex_column" style="margin:0.5em 0 0 2em">
+          <p>Select the high-level task that is being completed</p>
+          <select name=task method="GET" action="/">
+            <option disabled selected value hidden> -- select an option -- </option>
+            {% for t, captions in tasks.items() %}
+            <option value="{{t}}">{{captions[0]}}</option>"
+            {% endfor %}
+          </select>
+        </div>
+        <div class="flex_column" style="margin:0.5em 0 0 2em">
+          <p style="margin:1.5em 0;">Select the [x] block color</p>
+          <div class="color_buttons">
+            {% for c, hex_color in colors.items() %}
+              <input type="radio" class="btn-check" name="color_x" id="x_btn_{{c}}" autocomplete="off" method="GET" action="/" value="{{c}}">
+              <label class="btn btn-secondary block {{c}}" for="x_btn_{{c}}">{{c}}</label>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="flex_column" style="margin:0.5em 0 0 2em">
+            <p style="margin:0;">If applicable, select block [y] color.</p>
+            <p>stack on top of block [y].</p>
+            <div class="color_buttons">
+              {% for c, hex_color in colors.items() %}
+                <input type="radio" class="btn-check" name="color_y" id="y_btn_{{c}}" autocomplete="off" method="GET" action="/" value="{{c}}">
+                <label class="btn btn-secondary block {{c}}" for="y_btn_{{c}}">{{c}}</label>
+              {% endfor %}
+            </div>
+        </div>
+      </div>
+      <div class="flex_row" style="margin:1em 0 0 0">
+        <input class="btn btn-secondary" type="submit" name="submit_button" value="end">
+        <input class="btn btn-primary" type="submit" name="submit_button" value="no_task">
+        <input class="btn btn-primary" type="submit" name="submit_button" value="next">
+      </div>
+    </div>
+  </div>
+  <br />
+  <div align="center">
+    <label for="file">Progress</label>
+    <p><progress id="file" value={{ progress }} max="100"></progress></p>
+  </div>
+</form>
+
+{% endblock %}

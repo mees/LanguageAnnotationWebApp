@@ -1,0 +1,195 @@
+open_drawer: [ "grasp the drawer handle, then open it",
+                "grasp the drawer handle and open it",
+                "grasp the handle of the drawer, then open it",
+                "grasp the handle of the drawer and open it",
+                "open the drawer",
+                "go open the drawer",
+                "pull the handle of the drawer",
+                "pull the drawer",
+                "open the cabinet drawer" ]
+
+close_drawer: [ "grasp the drawer handle, then close it",
+               "grasp the drawer handle and close it",
+               "grasp the handle of the drawer, then close it",
+               "grasp the handle of the drawer and close it",
+               "close the drawer",
+               "go close the drawer",
+               "push the handle of the drawer",
+               "push the drawer",
+               "close the cabinet drawer"]
+
+move_slide_left: [ "grasp the door handle, then slide the door to the left",
+                    "grasp the door handle, then move the door to the left",
+                    "grasp the door handle and slide the door to the left",
+                    "grasp the door handle and move the door to the left",
+                    "move the door all the way to the left",
+                    "slide the door all the way to the left",
+                    "move the door to the left",
+                    "slide the door to the left",
+                    "push the door to the left",
+                    "move the door to the left side",
+                    "slide the door to the left side",
+                    "push the door to the left side",
+                    "slide the door to the left, then let it go",
+                    "move the door all the way to the left and let go",
+                    "move the sliding door to the left",
+                    "push the sliding door to the left"]
+
+move_slide_right: [ "grasp the door handle, then slide the door to the right",
+                    "grasp the door handle, then move the door to the right",
+                    "grasp the door handle and slide the door to the right",
+                    "grasp the door handle and move the door to the right",
+                    "move the door all the way to the right",
+                    "slide the door all the way to the right",
+                    "move the door to the right",
+                    "slide the door to the right",
+                    "push the door to the right",
+                    "move the door to the right side",
+                    "slide the door to the right side",
+                    "push the door to the right side",
+                    "slide the door to the right, then let it go",
+                    "move the door all the way to the right and let go",
+                    "move the sliding door to the right",
+                    "push the sliding door to the right"]
+
+turn_on_[x]_led: [ "turn on the [x] light",
+                   "turn on the [x] led light",
+                   "turn on the [x] light lamp",
+                   "switch off the [x] light",
+                   "move the [x] light switch to turn on the [x] light",
+                   "toggle the [x] light switch to turn on the [x] light",
+                   "push down the [x] button to turn on the [x] light",
+                   "push the [x] button to turn on the [x] light",
+                  ]
+
+turn_off_[x]_led: [ "turn off the [x] light",
+                   "turn off the [x] led light",
+                   "turn off the [x] light lamp",
+                   "switch off the [x] light",
+                   "move the [x] light switch to turn off the [x] light",
+                   "toggle the [x] light switch to turn off the [x] light",
+                   "push down the [x] button to turn off the [x] light",
+                   "push the [x] button to turn off the [x] light",
+                  ]
+
+rotate_[x]_block_right: ["grasp the [x] block, then rotate it right",
+                         "grasp the [x] block, then turn it right",
+                         "grasp the [x] block and rotate it right",
+                         "grasp the [x] block and turn it right",
+                         "take the [x] block and rotate it right",
+                         "take the [x] block and turn it right",
+                         "rotate right the [x] block",
+                         "rotate the [x] block 90 degrees to the right",
+                         "rotate the [x] block to the right",
+                         "rotate the [x] block towards the right",
+                         "turn the [x] block right"]
+
+rotate_[x]_block_left: ["grasp the [x] block, then rotate it left",
+                         "grasp the [x] block, then turn it left",
+                         "grasp the [x] block and rotate it left",
+                         "grasp the [x] block and turn it left",
+                         "take the [x] block and rotate it left",
+                         "take the [x] block and turn it left",
+                         "rotate the [x] block 90 degrees to the left",
+                         "rotate left the [x] block",
+                         "rotate the [x] block to the left",
+                         "rotate the [x] block towards the left",
+                         "turn the [x] block left"]
+
+push_[x]_block_left: ["push the [x] block towards the left",
+                       "push left the [x] block",
+                       "push the [x] block to the left",
+                       "go push the [x] block to the left",
+                       "slide the [x] block towards the left",
+                       "slide left [x] red block",
+                       "slide the [x] block to the left",
+                       "sweep the [x] block to the left",
+                       "go slide the [x] block to the left"]
+
+push_[x]_block_right: ["push the [x] block towards the right",
+                       "push right the [x] block",
+                       "push the [x] block to the right",
+                       "go push the [x] block to the right",
+                       "slide the [x] block towards the right",
+                       "slide right the [x] block",
+                       "slide the [x] block to the right",
+                       "sweep the [x] block to the right",
+                       "go slide the [x] block to the right"]
+
+place_[x]_box: [ "place the [x] block inside the box",
+                   "place the [x] object inside the box",
+                   "place the grasped [x] object inside the box",
+                   "put the [x] block inside the box",
+                   "put the [x] object inside the box",
+                   "put the grasped [x] object inside the box",
+                   "store the [x] block inside the box",
+                   "store the [x] object in the box",
+                   "store the grasped [x] object in the box",
+                   "move to the box and place the [x] object",
+                   "go towards the box and place the [x] object",
+                   "move to the box, then place the [x] object",
+                   "move to the white box and store the [x] object",
+                   "go towards the white box and store the [x] object",
+                   "move to the white box, then store the [x] object"]
+
+place_[x]_drawer: [ "place the [x] block in the drawer",
+                   "place the [x] object in the drawer",
+                   "place the grasped [x] object in the drawer",
+                   "put the [x] block in the drawer",
+                   "put the [x] object in the drawer",
+                   "put the grasped [x] object in the drawer",
+                   "store the [x] block in the drawer",
+                   "store the [x] object in the drawer",
+                   "store the grasped [x] object in the drawer",
+                   "move to the drawer and place the [x] object",
+                   "go towards the drawer and place the [x] object",
+                   "move to the drawer, then place the [x] object",
+                   "move to the drawer and store the [x] object",
+                   "go towards the drawer and store the [x] object",
+                   "move to the drawer, then store the [x] object"]
+
+place_[x]_left_cabinet: ["place the [x] block inside the left cabinet",
+                          "place the [x] object inside the left cabinet",
+                          "place the grasped [x] block inside the left cabinet",
+                          "put the [x] block inside the left cabinet",
+                          "put the [x] object inside the left cabinet",
+                          "put the grasped [x] block inside the left cabinet"]
+
+place_[x]_right_cabinet: ["place the [x] block inside the right cabinet",
+                          "place the [x] object inside the right cabinet",
+                          "place the grasped [x] block inside the right cabinet",
+                          "put the [x] block inside the right cabinet",
+                          "put the [x] object inside the right cabinet",
+                          "put the grasped [x] block inside the right cabinet"]
+
+place_[x]_table: ["place the [x] block on the table",
+                   "put the [x] block on the table",
+                   "place the [x] object on the table",
+                   "put the [x] object on the table"]
+
+place_[x]_drawer_top: ["place the [x] block on top of the drawer",
+                        "put the [x] block on top of the drawer",
+                        "place the [x] object on top of the drawer",
+                        "put the [x] object on top of the drawer"]
+
+unstack_[x]_block: ["unstack the [x] block",
+                     "take off the [x] block",
+                     "go to the tower of blocks and take off the [x] block",
+                     "take off the [x] block that is on top of the other one",
+                     "remove the top [x] block",
+                     "collapse the stacked blocks"]
+
+lift_[x]_block: ["lift the [x] block",
+                  "grasp the [x] block",
+                  "pick up the [x] block",
+                  "go towards the [x] block and pick it up",
+                  "go towards the [x] block and grasp it",
+                  "go towards the [x] block and lift it"]
+
+push_[x]_block_in_drawer: ["push the [x] block inside the drawer",
+                            "slide the [x] block into the drawer",
+                            "go push the [x] block into the drawer"]
+
+stack_[x]_on_[y]: ["stack the [x] block on top of the [y] block",
+                   "place the [x] block on top of the [y] block",
+                   "put the grasped [x] block on top of the [y] block"]
