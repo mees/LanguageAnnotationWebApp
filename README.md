@@ -4,7 +4,7 @@
 
 This is a simple web annotation tool for annotating undirected, human teleoperated play data with crowdsourced language annotations. 
 
-![](media/LangAnnotation.png)
+![](media/LangAnnotation.jpg)
 
 ## Installation
 In the source directory type:
