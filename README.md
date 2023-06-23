@@ -62,4 +62,4 @@ address = {London, UK}
 MIT License
 
 ## Authorship
-This code was developed by [Jessica Borja](https://github.com/JessicaBorja), [Mikel Martinez](https://github.com/mikelmrtinez) and [Oier Mees](www.oiermees.com) at the University of Freiburg, Germany.
+This code was developed by [Jessica Borja](https://github.com/JessicaBorja), [Mikel Martinez](https://github.com/mikelmrtinez) and [Oier Mees](https://www.oiermees.com) at the University of Freiburg, Germany.
